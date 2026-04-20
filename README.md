@@ -13,7 +13,6 @@ This repository provides inference-ready XGBoost models for two outcomes after e
 This repository is inference-only.
 
 - Includes: pretrained XGBoost models and inference notebooks
-- Excludes: training pipeline and original training dataset
 - For training/retraining resources: please contact the authors
 
 ## Data Note (Important)
@@ -152,6 +151,39 @@ Notebook outputs include:
 - ROC curve figure
 - SHAP beeswarm figure (`shap_beeswarm_XGB.png`)
 - SHAP force plots in `shap_force_plots/`
+
+## Test Performance Benchmarks
+
+The pretrained XGBoost models provided in this repository correspond to the XGB rows in the benchmark tables below.
+These results show that XGB is a competitive and sufficiently accurate model for both tasks in this project.
+
+### Table 5. Comparison of Test Performance Metrics for Machine Learning Models in Predicting Non-home Discharge (NHD)
+
+| Model | AUC (95% CI) | Accuracy | Sensitivity | Specificity | F1 score | PPV | NPV |
+|---|---|---:|---:|---:|---:|---:|---:|
+| LR | 0.758 (0.698-0.812) | 0.695 | 0.711 | 0.685 | 0.645 | 0.591 | 0.787 |
+| SVM | 0.759 (0.699-0.815) | 0.699 | 0.500 | 0.826 | 0.564 | 0.648 | 0.721 |
+| KNN | 0.735 (0.674-0.789) | 0.671 | 0.693 | 0.657 | 0.622 | 0.564 | 0.770 |
+| RF | 0.751 (0.691-0.804) | 0.695 | 0.728 | 0.674 | 0.651 | 0.589 | 0.795 |
+| XGB | 0.763 (0.705-0.816) | 0.702 | 0.693 | 0.708 | 0.645 | 0.603 | 0.783 |
+| LGBM | 0.754 (0.693-0.808) | 0.661 | 0.711 | 0.629 | 0.621 | 0.551 | 0.772 |
+| Stacking | 0.758 (0.698-0.811) | 0.685 | 0.693 | 0.680 | 0.632 | 0.581 | 0.776 |
+| Soft Voting | 0.762 (0.703-0.816) | 0.688 | 0.711 | 0.674 | 0.640 | 0.583 | 0.784 |
+
+### Table 3. Comparison of Test Performance Metrics for Machine Learning Models in Predicting Prolonged LOS
+
+| Model | AUC (95% CI) | Accuracy | Sensitivity | Specificity | F1 score | PPV | NPV |
+|---|---|---:|---:|---:|---:|---:|---:|
+| LR | 0.689 (0.616-0.762) | 0.692 | 0.611 | 0.718 | 0.494 | 0.415 | 0.849 |
+| SVM | 0.713 (0.641-0.784) | 0.658 | 0.681 | 0.650 | 0.495 | 0.389 | 0.861 |
+| KNN | 0.697 (0.628-0.763) | 0.658 | 0.611 | 0.673 | 0.468 | 0.379 | 0.841 |
+| RF | 0.720 (0.649-0.788) | 0.716 | 0.611 | 0.750 | 0.515 | 0.444 | 0.855 |
+| XGB | 0.729 (0.661-0.799) | 0.719 | 0.639 | 0.745 | 0.529 | 0.451 | 0.863 |
+| LGBM | 0.716 (0.646-0.785) | 0.719 | 0.583 | 0.764 | 0.506 | 0.447 | 0.848 |
+| Stacking | 0.717 (0.645-0.784) | 0.668 | 0.639 | 0.677 | 0.487 | 0.393 | 0.851 |
+| Soft Voting | 0.734 (0.667-0.800) | 0.705 | 0.625 | 0.732 | 0.511 | 0.433 | 0.856 |
+
+In summary, the current repository models (`lumbar_discharge/models/xgb_model.json` and `lumbar_los/models/xgb_model.json`) are the XGB models aligned with these benchmark results.
 
 ## Contact
 
