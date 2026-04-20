@@ -1,0 +1,6 @@
+Backup
+.history
+MIMIC_Data
+__pycache__
+Weight_BiSHop/
+Weight_Tabtranformer/

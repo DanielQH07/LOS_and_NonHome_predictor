@@ -1,0 +1,5 @@
+age_at_admit,gender,bmi_kg_m2,marital_status,insurance,race,htn,dm_uncomp,dm_comp,copd,chf,renal,liver,psych,osteoporosis,thyroid_disorders,rheumatoid_arthritis,smoking,anticoagulant_use,rbc,hgb,hct,mch,mcv,mchc,rdw,wbc,platelet,glucose,sodium,potassium,chloride,bicarbonate,calcium,magnesium,phosphate,creatinine,bun,surgical_approach_group,level_group,length_of_stay_days,los_class,discharge_disposition
+42,1,28.85,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4.26,13.13,37.86,31.12,89,35.11,13.97,11.42,275,86,136,4.12,102,27,8.51,1.71,3.42,0.67,8,2,0,4.34,0,0
+73,0,29.26,3,0,0,1,0,0,0,0,0,0,1,1,1,1,0,1,4.2,11.59,37.0,27.55,88,31.29,13.94,8.91,309,115,138,4.48,102,19,9.27,1.77,4.28,0.91,19,0,1,5.6,0,1
+66,0,33.06,0,2,0,1,0,0,0,0,0,0,1,0,0,0,0,0,4.25,12.76,39.51,29.85,91,32.47,13.54,17.89,722,145,136,4.37,101,25,9.81,1.81,3.36,0.61,16,0,0,3.33,0,1
+77,0,29.5,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,3.0,9.16,28.08,30.2,94,32.4,14.27,14.03,282,147,137,4.93,103,25,8.26,2.11,4.51,0.98,13,2,1,9.58,1,1
